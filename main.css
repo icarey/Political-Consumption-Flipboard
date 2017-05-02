@@ -1,0 +1,77 @@
+.flipboard {
+    width: 100%;
+    position: relative;
+}
+
+.info_slides {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.66);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: -1;
+    /* While dial the z-index down because even if an element doesn't have opacity it still has 'mass'. The info window would get in the way of clicking on the circles without this */
+    transition: opacity .5s ease-in-out;
+    /* this gives us the fade in and fade out effect but only on the opacity element. You cannot use the display property with transitions. */
+}
+
+.info_slides.active {
+    z-index: 4;
+    /* We give the info_slides a higher z-index on active */
+    opacity: 1;
+}
+
+.btn_close {
+    position: absolute;
+    font-family: sans-serif;
+    top: 5%;
+    left: 92%;
+    font-size: 1.2em;
+    color: black;
+    z-index: 4;
+    font-weight: 900;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 2.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #0099cc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #808080;
+}
+
+.decoration {
+    background-color: #F0F0F0;
+    height: 15px;
+}
+
+.info_popIn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 50px 15px 30px 15px;
+    font-size: 1.6em;
+    text-align: center;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.flipcard {
+    border: solid white;
+    display: block;
+    width: 50%;
+    position: relative;
+}
+
+.flipcard img {
+    width: 100%;
+}
