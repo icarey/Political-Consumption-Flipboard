@@ -1,12 +1,17 @@
 .flipboard {
     width: 100%;
     position: relative;
+    padding-left: 20px;
+    padding-bottom: 50px;
 }
 
 .info_slides {
-    width: 100%;
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.66);
     position: absolute;
+    display: block;
+    width: 40%;
+    float: left;
     top: 0px;
     left: 0px;
     opacity: 0;
@@ -68,10 +73,19 @@ a:hover {
 .flipcard {
     border: solid white;
     display: block;
-    width: 50%;
-    position: relative;
+    width: 40%;
+    float: left;
+    background-color: rgb(202, 247, 227);
 }
 
 .flipcard img {
     width: 100%;
 }
+
+#laptop {}
+
+#maps {
+    background-color: rgb(202, 247, 227);
+}
+
+#packages {}
