@@ -1,3 +1,52 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: auto;
+}
+
+
+/*  Sets default font-size to 16px, ensuring 1em = 16px; */
+
+h1 {
+    font-size: 1.4em;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: .8em;
+    margin: 10px;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px;
+}
+
 .flipboard {
     width: 100%;
     position: relative;
@@ -73,7 +122,7 @@ a:hover {
 .flipcard {
     border: solid white;
     display: block;
-    width: 40%;
+    width: 45%;
     float: left;
     background-color: rgb(202, 247, 227);
 }
@@ -89,3 +138,23 @@ a:hover {
 }
 
 #packages {}
+
+ges {}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .flipcard {
+        width: 23%;
+        float: left;
+    }
+    .item.active {
+        display: block;
+    }
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
