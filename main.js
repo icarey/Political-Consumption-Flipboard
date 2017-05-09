@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 		var flipcard_clicked = $(this),
 			text = flipcard_clicked.data("text"),
-			popUp = flipcard_clicked.closest(".flipboard").find(".info_slides"),
+			popUp = flipcard_clicked.find(".info_slides"),
 			popUp_text = popUp.find(".info_popIn");
 
 		popUp_text.find(".headline").text(flipcard_clicked.data("headline"));
@@ -19,9 +19,12 @@ $(document).ready(function () {
 
 	$(".btn_close").on("click", function (e) {
 		e.preventDefault();
+		e.stopImmediatePropagation();
 
 		var close_button_clicked = $(this),
 			popUp = close_button_clicked.closest(".info_slides");
+
+		console.log(popUp);
 		console.log("close button activated");
 		popUp.removeClass("active");
 
