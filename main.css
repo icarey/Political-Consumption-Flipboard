@@ -23,10 +23,15 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     margin: auto;
+    width: 100%;
 }
 
 
 /*  Sets default font-size to 16px, ensuring 1em = 16px; */
+
+.container {
+    width: 100%;
+}
 
 h1 {
     font-size: 1.4em;
@@ -115,8 +120,7 @@ a:hover {
     font-size: 1.6em;
     text-align: center;
     color: black;
-    height: 100%;
-    width: 100%;
+    width: 45%;
 }
 
 .flipcard {
@@ -131,15 +135,89 @@ a:hover {
     width: 100%;
 }
 
-#laptop {}
-
-#maps {
-    background-color: rgb(202, 247, 227);
+.info_slides, .slide {
+    width: 100%;
 }
 
-#packages {}
+#laptop {
+    background-color: rgb(250, 180, 230);
+}
 
-ges {}
+#maps {
+    background-color: rgb(210, 254, 210);
+}
+
+#packages {
+    background-color: rgb(210, 254, 210);
+}
+
+#fries {
+    background-color: rgb(254, 232, 130);
+}
+
+#verizon {
+    background-color: rgb(255, 166, 114);
+}
+
+#att {
+    background-color: rgb(210, 254, 210);
+}
+
+#nike {
+    background-color: rgb(250, 180, 230);
+}
+
+#homedepot {
+    background-color: rgb(210, 254, 210);
+}
+
+#word {
+    background-color: rgb(254, 232, 130);
+}
+
+#wells-fargo {
+    background-color: rgb(210, 254, 210);
+}
+
+#walmart {
+    background-color: rgb(255, 166, 114);
+}
+
+#chase {
+    background-color: rgb(210, 254, 210);
+}
+
+#ge {
+    background-color: rgb(250, 180, 230);
+}
+
+#coke {
+    background-color: rgb(210, 254, 210);
+}
+
+#facebook {
+    background-color: rgb(210, 254, 210);
+}
+
+#ibm {
+    background-color: rgb(254, 232, 130);
+}
+
+#disney {
+    background-color: rgb(255, 166, 114);
+}
+
+#marlboro {
+    background-color: rgb(210, 254, 210);
+}
+
+#bankofa {
+    background-color: rgb(210, 254, 210);
+}
+
+#citi {
+    background-color: rgb(250, 180, 230);
+}
 
 
 /* Tablet/Desktop overrides */
@@ -153,8 +231,31 @@ ges {}
     .item.active {
         display: block;
     }
-}
-
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    #maps {
+        background-color: rgb(255, 166, 114);
+    }
+    #homedepot {
+        background-color: rgb(250, 180, 230);
+    }
+    #nike {
+        background-color: rgb(210, 254, 210);
+    }
+    #verizon {
+        background-color: rgb(254, 232, 130);
+    }
+    #word {
+        background-color: rgb(210, 254, 210);
+    }
+    #wells-fargo {
+        background-color: rgb(250, 180, 230);
+    }
+    #facebook {
+        background-color: rgb(255, 166, 114);
+    }
+    #marlboro {
+        background-color: rgb(254, 232, 130);
+    }
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    }
 }

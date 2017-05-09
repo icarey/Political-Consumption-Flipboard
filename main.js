@@ -11,7 +11,8 @@ $(document).ready(function () {
 		popUp_text.find(".dems").text(flipcard_clicked.data("dems"));
 		popUp_text.find(".reps").text(flipcard_clicked.data("reps"));
 		// popUp_text.find(".total").text(flipcard_clicked.data("total"));
-		// popUp_text.find(".summary").text(flipcard_clicked.data("summary"));
+		popUp_text.find(".summary").text(flipcard_clicked.data("summary"));
+		popUp_text.find(".methodology").text(flipcard_clicked.data("methodology"));
 		popUp.removeClass("dems").removeClass("reps").addClass(flipcard_clicked.data("party"))
 		popUp.addClass("active");
 	});
