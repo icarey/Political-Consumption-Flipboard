@@ -29,6 +29,10 @@ html, body {
 
 /*  Sets default font-size to 16px, ensuring 1em = 16px; */
 
+#reporting {
+    padding-top: 20px;
+}
+
 .container {
     width: 100%;
 }
@@ -73,11 +77,11 @@ h3 {
 }
 
 .info_slides.dems {
-    background-color: rgba(0, 0, 255, .85);
+    background-color: rgba(60, 155, 190, .85);
 }
 
 .info_slides.reps {
-    background-color: rgba(255, 0, 0, .85);
+    background-color: rgba(250, 130, 140, .85);
 }
 
 .info_slides.active {
@@ -90,11 +94,12 @@ h3 {
     position: absolute;
     font-family: sans-serif;
     top: 3%;
-    left: 85%;
-    font-size: 1.2em;
-    color: black;
+    left: 88%;
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: rgb(105, 105, 105);
     z-index: 4;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h1 {
