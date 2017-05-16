@@ -1,19 +1,87 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: auto;
+    width: 100%;
+}
+
+
+/*  Sets default font-size to 16px, ensuring 1em = 16px; */
+
+#reporting {
+    padding-top: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.4em;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: .8em;
+    margin: 10px;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px;
+}
+
 .flipboard {
     width: 100%;
     position: relative;
+    padding-left: 20px;
+    padding-bottom: 50px;
 }
 
 .info_slides {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.66);
     position: absolute;
+    display: block;
+    width: 100%;
+    float: left;
     top: 0px;
     left: 0px;
     opacity: 0;
     z-index: -1;
-    /* While dial the z-index down because even if an element doesn't have opacity it still has 'mass'. The info window would get in the way of clicking on the circles without this */
     transition: opacity .5s ease-in-out;
-    /* this gives us the fade in and fade out effect but only on the opacity element. You cannot use the display property with transitions. */
+    height: 100%;
+}
+
+.info_slides.dems {
+    background-color: rgba(60, 155, 190, .85);
+}
+
+.info_slides.reps {
+    background-color: rgba(250, 130, 140, .85);
 }
 
 .info_slides.active {
@@ -25,12 +93,13 @@
 .btn_close {
     position: absolute;
     font-family: sans-serif;
-    top: 5%;
-    left: 92%;
-    font-size: 1.2em;
-    color: black;
+    top: 3%;
+    left: 88%;
+    padding-bottom: 5px;
+    font-size: 1em;
+    color: rgb(105, 105, 105);
     z-index: 4;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h1 {
@@ -57,21 +126,150 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    padding: 50px 15px 30px 15px;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: center;
     color: black;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
 }
 
 .flipcard {
     border: solid white;
     display: block;
-    width: 50%;
+    width: 45%;
+    float: left;
+    background-color: rgb(202, 247, 227);
     position: relative;
 }
 
 .flipcard img {
     width: 100%;
+}
+
+.slide {
+    width: 100%;
+}
+
+#laptop {
+    background-color: rgb(250, 180, 230);
+}
+
+#maps {
+    background-color: rgb(210, 254, 210);
+}
+
+#packages {
+    background-color: rgb(210, 254, 210);
+}
+
+#fries {
+    background-color: rgb(254, 232, 130);
+}
+
+#verizon {
+    background-color: rgb(255, 166, 114);
+}
+
+#att {
+    background-color: rgb(210, 254, 210);
+}
+
+#nike {
+    background-color: rgb(250, 180, 230);
+}
+
+#homedepot {
+    background-color: rgb(210, 254, 210);
+}
+
+#word {
+    background-color: rgb(254, 232, 130);
+}
+
+#wells-fargo {
+    background-color: rgb(210, 254, 210);
+}
+
+#walmart {
+    background-color: rgb(255, 166, 114);
+}
+
+#chase {
+    background-color: rgb(210, 254, 210);
+}
+
+#ge {
+    background-color: rgb(250, 180, 230);
+}
+
+#coke {
+    background-color: rgb(210, 254, 210);
+}
+
+#facebook {
+    background-color: rgb(210, 254, 210);
+}
+
+#ibm {
+    background-color: rgb(254, 232, 130);
+}
+
+#disney {
+    background-color: rgb(255, 166, 114);
+}
+
+#marlboro {
+    background-color: rgb(210, 254, 210);
+}
+
+#bankofa {
+    background-color: rgb(210, 254, 210);
+}
+
+#citi {
+    background-color: rgb(250, 180, 230);
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .flipcard {
+        width: 23%;
+        float: left;
+    }
+    .item.active {
+        display: block;
+    }
+    #maps {
+        background-color: rgb(255, 166, 114);
+    }
+    #homedepot {
+        background-color: rgb(250, 180, 230);
+    }
+    #nike {
+        background-color: rgb(210, 254, 210);
+    }
+    #verizon {
+        background-color: rgb(254, 232, 130);
+    }
+    #word {
+        background-color: rgb(210, 254, 210);
+    }
+    #wells-fargo {
+        background-color: rgb(250, 180, 230);
+    }
+    #facebook {
+        background-color: rgb(255, 166, 114);
+    }
+    #marlboro {
+        background-color: rgb(254, 232, 130);
+    }
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    }
 }

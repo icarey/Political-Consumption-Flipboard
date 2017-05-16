@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
-        <link href="https://fonts.googleapis.com/css?family=Cabin|Source+Serif+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <title>Your Daily Political Consumption</title>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,280 +25,443 @@
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
-        <h1>See the Political Impact of Your Daily Consuming</h1>
-        <h2>By Pauliina Siniauer and Isaac Carey</h2>
-        <h3>Here are the top 20 American brands. You probably use at least one of them every day. See if you know where these products stand politically.</h3>
+        <div class="container">
+
+            <h1>See the Political Impact of Your Daily Consumption</h1>
+            <h2>By Pauliina Siniauer and Isaac Carey</h2>
+            <h3>Here are the top 20 American brands. You probably use at least one of them every day. See if you know which party each company supported the most in 2016.</h3>
 
 
-        <div class="flipboard">
-            <div id="laptop" class="flipcard" data-headline="Apple" data-dems="$2,025,234" data-reps="$203,620" data-summary="80% more to Democrats" data-party="dems">
-                <img src="img/apple.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
+            <div class="flipboard">
+                <div id="laptop" class="flipcard" data-party="dems">
+                    <img src="img/apple.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>APPLE</p>
+                            <br>
+                            <p>Dems: $2,025,234 </p>
+
+                            <p>Reps: $203,620 </p>
+                            <br>
+                            <p>80% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
                 </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
+
+                <div id="maps" class="flipcard" data-party="reps">
+                    <img src="img/google2.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>GOOGLE</p>
+                            <br>
+                            <p>Dems: $655,700</p>
+                            <p>Reps: $818,300</p>
+                            <br>
+                            <p>8% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="packages" class="flipcard" data-summary="41% more to Democrats" data-party="dems">
+                    <img src="img/amazon.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>AMAZON</p>
+                            <br>
+                            <p>Dems: $1,071,933</p>
+                            <p>Reps: $441,094</p>
+                            <br>
+                            <p>41% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="fries" class="flipcard" data-party="reps">
+                    <img src="img/mcdonalds.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>McDONALDS</p>
+                            <br>
+                            <p>Dems: $334,005</p>
+                            <p>Reps: $501,925</p>
+                            <br>
+                            <p>20% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="verizon" class="flipcard" data-party="reps">
+                    <img src="img/verizon.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>VERIZON</p>
+                            <br>
+                            <p>Dems: $1,548,909</p>
+                            <p>Reps: $1,677,635</p>
+                            <br>
+                            <p>4% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="att" class="flipcard" data-party="reps">
+                    <img src="img/att.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>AT&T</p>
+                            <br>
+                            <p>Dems: $2,342,365</p>
+                            <p>Reps: $7,588,805</p>
+                            <br>
+                            <p>52% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="homedepot" class="flipcard" data-summary="44% more to Republicans" data-party="reps">
+                    <img src="img/homedepot.png ">
+                    <div class="info_slides ">
+                        <div id="X-close " class="btn_close ">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png " />
+                        <div class="info_popIn">
+                            <p>HOME DEPOT</p>
+                            <br>
+                            <p>Dems: $1,077,083</p>
+                            <p>Reps: $2,756,046</p>
+                            <br>
+                            <p>44% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="nike" class="flipcard" data-party="dems ">
+                    <img src="img/nike.png ">
+                    <div class="info_slides ">
+                        <div id="X-close " class="btn_close ">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png " />
+                        <div class="info_popIn">
+                            <p>NIKE</p>
+                            <br>
+                            <p>Dems: $522,453</p>
+                            <p>Reps: $366,817</p>
+                            <br>
+                            <p>17% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="word" class="flipcard" data-party="reps">
+                    <img src="img/word.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>MICROSOFT</p>
+                            <br>
+                            <p>Dems: $3,051,416</p>
+                            <p>Reps: $3,408,196</p>
+                            <br>
+                            <p>5% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="wells-fargo" class="flipcard" data-summary="5% more to Republicans" data-party="reps">
+                    <img src="img/wellsfargo.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>WELLS FARGO</p>
+                            <br>
+                            <p>Dems: $1,557,409</p>
+                            <p>Reps: $1,748,309</p>
+                            <br>
+                            <p>5% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="chase" class="flipcard" data-party="dems">
+                    <img src="img/chase.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>CHASE</p>
+                            <br>
+                            <p>Dems: $1,747,722</p>
+                            <p>Reps: $1,601,318</p>
+                            <br>
+                            <p>4% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
 
 
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
+                <div id="walmart" class="flipcard" data-party="reps">
+                    <img src="img/walmart.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>WALMART</p>
+                            <br>
+                            <p>Dems: $975,739</p>
+                            <p>Reps: $1,367,464</p>
+                            <br>
+                            <p>16% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
 
+                </div>
 
-                    <p class="summary"></p>
+                <div id="ge" class="flipcard" data-party="reps">
+                    <img src="img/ge.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>GENERAL ELECTRIC</p>
+                            <br>
+                            <p>Dems: $1,646,785</p>
+                            <p>Reps: $2,846,990</p>
+                            <br>
+                            <p>26% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="coke" class="flipcard" data-party="reps">
+                    <img src="img/coke.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>COCA-COLA</p>
+                            <br>
+                            <p>Dems: $635,625</p>
+                            <p>Reps: $819,072</p>
+                            <br>
+                            <p>8% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="facebook" class="flipcard" data-party="dems">
+                    <img src="img/facebook.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>FACEBOOK</p>
+                            <br>
+                            <p>Dems: $1,621,075</p>
+                            <p>Reps: $1,457,670</p>
+                            <br>
+                            <p>5% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="ibm" class="flipcard" data-party="dems">
+                    <img src="img/ibm.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>IBM</p>
+                            <br>
+                            <p>Dems: $749,379</p>
+                            <p>Reps: $138,064</p>
+                            <br>
+                            <p>65% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="disney" class="flipcard" data-party="dems">
+                    <img src="img/disney2.png">
+                    <div class="info_slides">
+                        <div id="X-close" class="btn_close">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png" />
+                        <div class="info_popIn">
+                            <p>DISNEY</p>
+                            <br>
+                            <p>Dems: $1,628,361</p>
+                            <p>Reps: $250,248</p>
+                            <br>
+                            <p>32% more to</p>
+                            <p>Democrats</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="marlboro" class="flipcard" data-party="reps">
+                    <img src="img/marlboro.png ">
+                    <div class="info_slides ">
+                        <div id="X-close " class="btn_close ">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png " />
+                        <div class="info_popIn ">
+                            <p>MARLBORO</p>
+                            <br>
+                            <p>Dems: $0</p>
+                            <p>Reps: $2,000</p>
+                            <br>
+                            <p>100% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="bankofa" class="flipcard" data-party="reps">
+                    <img src="img/bankofa.png ">
+                    <div class="info_slides ">
+                        <div id="X-close " class="btn_close ">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png " />
+                        <div class="info_popIn ">
+                            <p>BANK OF AMERICA</p>
+                            <br>
+                            <p>Dems: $1,473,169</p>
+                            <p>Reps: $2,735,195</p>
+                            <br>
+                            <p>28% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="citi" class="flipcard" data-party="reps">
+                    <img src="img/citi.png ">
+                    <div class="info_slides ">
+                        <div id="X-close " class="btn_close ">
+                            <p>X</p>
+                        </div>
+                        <img class="slide" src="img/slide.png " />
+                        <div class="info_popIn ">
+                            <p>CITI</p>
+                            <br>
+                            <p>Dems: $1,292,546</p>
+                            <p>Reps: $1,426,828</p>
+                            <br>
+                            <p>4% more to</p>
+                            <p>Republicans</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <div id="maps" class="flipcard" data-headline="Google" data-dems="$655,700" data-reps="$818,300" data-summary="8% more to Republicans" data-party="reps">
-                <img src="img/google.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="packages" class="flipcard" data-headline="Amazon" data-dems="$1,071,933" data-reps="$441,094" data-summary="41% more to Democrats" data-party="dems">
-                <img src="img/amazon.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="word" class="flipcard" data-headline="Microsoft" data-dems="$3,051,416" data-reps="3,408,196" data-summary="5% more to Republicans" data-party="reps">
-                <img src="img/microsoft.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="wifi" class="flipcard" data-headline="Verizon" data-dems="$1,548,909" data-reps="$1,677,635" data-summary="4% more to Republicans" data-party="reps">
-                <img src="img/verizon.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="att" class="flipcard" data-headline="AT&T" data-dems="$2,342,365" data-reps="$7,588,805" data-summary="52% more to Republicans" data-party="reps">
-                <img src="img/att.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="walmart" class="flipcard" data-headline="Walmart" data-dems="$975,739" data-reps="$1,367,464" data-summary="16% more to Republicans" data-party="reps">
-                <img src="img/walmart.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="wells-fargo" class="flipcard" data-headline="Wells Fargo" data-dems="$1,557,409" data-reps="$1,748,309" data-summary="5% more to Republicans" data-party="reps">
-                <img src="img/wellsfargo.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="hamburger" class="flipcard" data-headline="MacDonalds" data-dems="$334,005" data-reps="$501,925" data-summary="20% more to Republicans" data-party="reps">
-                <img src="img/macdonalds.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="ge" class="flipcard" data-headline="General Electric" data-dems="$1,646,785" data-reps="$2,846,990" data-summary="26% more to Republicans" data-party="reps">
-                <img src="img/ge.jpg">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="coke" class="flipcard" data-headline="Coca-Cola" data-dems="$635,625" data-reps="$819,072" data-summary="8% more to Republicans" data-party="reps">
-                <img src="img/coke.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="facebook" class="flipcard" data-headline="Facebook" data-dems="$1,621,075" data-reps="$1,457,670" data-summary="5% more to Democrats" data-party="dems">
-                <img src="img/facebook.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
-            <div id="ibm" class="flipcard" data-headline="IBM" data-dems="$749,379" data-reps="$138,064" data-summary="65% more to Democrats" data-party="dems">
-                <img src="img/ibm.png">
-            </div>
-            <div class="info_slides">
-                <div id="X-close" class="btn_close">
-                    <p>X</p>
-                </div>
-                <img src="img/slide.png" />
-                <div class="info_popIn">
-                    <h2 class="headline"></h2>
-
-
-                    <p>Democrats: <span class="dems"></span></p>
-                    <p>Republicans: <span class="reps"></span></p>
-
-
-                    <p class="summary"></p>
-                </div>
-            </div>
-
 
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <div id="reporting">
+            <p> “With donation money, companies are essentially buying access,” said Greg David, writer of a weekly column for Crain’s New York Business, and the director of the Business & Economics Reporting Program at the CUNY Graduate School of Journalism.
+                Why do most companies give a substantial amount to both parties? “They are hedging their bets,” David said. For example, Facebook donated over $3 million total in 2016, but there was only a 5% difference between the parties.
+            </p>
+
+            <p>However, companies will usually give a bit more to whichever party they think will win. “Many companies tend to give to Republicans because they are in power,” David said, “They control the House and the Senate.” This is why the majority of
+                the companies leaned Republican in 2016, even if only by a small margin.</p>
+
+            <p>Others will donate based on particular business interests. In recent years, Verizon has stepped up their support for Republicans because the party is opposed to <a href="https://www.vox.com/2015/2/5/7986501/network-neutrality-partisan-issue">net neutrality.</a>                Meanwhile, Apple gives more to Democrats because the party is in favor of keeping the internet open.</p>
+
+            <p>Some companies, like Nike, will actually donate based on personal politics. Nike tends to donate significantly more to Democrats because the CEO of the corporation, Mark Parker, is a Democrat who has publicly been very critical of Trump.</p>
+
+            <p>The numbers in this story come from <a href="https://www.opensecrets.org/">The Center for Responsive Politics</a>, a nonprofit, nonpartisan research center dedicated to tracking money in US politics.</p>
+        </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
 
         <!-- Your javascript should be called here -->
-        <script src="main.js"></script>
+        <script src="main.js "></script>
         </div>
+
     </body>
 
 </html>
