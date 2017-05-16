@@ -51,16 +51,25 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
-    margin: 10px;
-    padding: 10px;
+    line-height: 120%;
+    font-size: .8em;
+    color: white;
+}
+
+h5 {
+    line-height: 120%;
+    font-size: .8em;
+    color: rgb(255, 223, 0);
+}
+
+h3 span {
+    background-color: rgba(254, 232, 130, .7);
 }
 
 .flipboard {
     width: 100%;
     position: relative;
     padding-left: 20px;
-    padding-bottom: 50px;
 }
 
 .info_slides {
@@ -72,16 +81,17 @@ h3 {
     left: 0px;
     opacity: 0;
     z-index: -1;
-    transition: opacity .5s ease-in-out;
+    transition: opacity .6s ease-in-out;
     height: 100%;
 }
 
 .info_slides.dems {
-    background-color: rgba(60, 155, 190, .85);
+    background-color: rgba(60, 155, 190, .9);
+    color: white;
 }
 
 .info_slides.reps {
-    background-color: rgba(250, 130, 140, .85);
+    background-color: rgba(255, 100, 100, .9);
 }
 
 .info_slides.active {
